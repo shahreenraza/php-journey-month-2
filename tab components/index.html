@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>My Tabs Component</h1>
+
+        <button id="menu-toggle"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="tab-menu">
+            ☰
+        </button>
+
+        <div id="tab-menu" role="tablist" aria-label="Page sections">
+            <button id="tab-home" class="tab active"
+                    role="tab" aria-controls="home"
+                    aria-selected="true" tabindex="0">
+                HOME
+            </button>
+
+            <button id="tab-about" class="tab"
+                    role="tab" aria-controls="about"
+                    aria-selected="false" tabindex="-1">
+                ABOUT
+            </button>
+
+            <button id="tab-contact" class="tab"
+                    role="tab" aria-controls="contact"
+                    aria-selected="false" tabindex="-1">
+                CONTACT
+            </button>
+        </div>
+
+        <section id="home" class="panel"
+                 role="tabpanel" aria-labelledby="tab-home">
+            <h2>Home</h2>
+            <p>Welcome! This is the home information panel.</p>
+        </section>
+
+        <section id="about" class="panel"
+                 role="tabpanel" aria-labelledby="tab-about" hidden>
+            <h2>About</h2>
+            <p>Learn more about this website here.</p>
+        </section>
+
+        <section id="contact" class="panel"
+                 role="tabpanel" aria-labelledby="tab-contact" hidden>
+            <h2>Contact</h2>
+            <p>You can find contact information here.</p>
+        </section>
+    </main>
+
+</body>
+</html>

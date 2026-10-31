@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Modal Project</h1>
+        <p>
+          Click the button below to open the modal.  
+        </p>
+        <button id="open-modal">
+            Open Modal
+        </button>
+    </div>
+      <div id="modal-backdrop" class="backdrop" hidden>
+
+        
+        <div
+            id="modal"
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+            tabindex="-1"
+        >
+
+            <button id="close-modal" class="close-btn"
+                    aria-label="Close modal">
+                &times;
+            </button>
+
+            <h2 id="modal-title">Welcome!</h2>
+
+            <p>
+                This is a modal dialog.
+                You can close it using the close button,
+                clicking outside, or pressing Escape.
+            </p>
+
+            <button id="confirm-modal">
+                Okay
+            </button>
+
+        </div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>

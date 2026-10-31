@@ -1,0 +1,20 @@
+console.log(5 == "5")
+console.log(0 == 0);
+console.log("sizz" == 9);
+console.log(null == 0);
+console.log(3.12 == 4);
+console.log(3.14 == "string");
+console.log(0n == 0 );
+console.log(0n == "zzz");
+console.log(undefined == 0);
+console.log(null == null);
+console.log(4 === "4");
+console.log(5 === 6);
+console.log(5 === 5);
+console.log("sizz" === 0n);
+console.log("string" === "string");
+console.log(undefined === 0);
+console.log(null === null);
+console.log(0n === 0);
+console.log(99.1 === 99.2);
+console.log(32 === 34);

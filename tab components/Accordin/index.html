@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="accordion">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="accordion-item">
+            <button class="accordion-question" aria-expanded="false">
+                What is JavaScript?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-panel">
+                <div class="accordion-content">
+                    JavaScript is a programming language that makes web pages interactive.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-question" aria-expanded="false">
+                What is HTML?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-panel">
+                <div class="accordion-content">
+                    HTML provides the structure and content of a web page.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-question" aria-expanded="false">
+                What is CSS?
+                <span class="icon">+</span>
+            </button>
+            <div class="accordion-panel">
+                <div class="accordion-content">
+                    CSS controls the colors, spacing, fonts, and layout of a web page.
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

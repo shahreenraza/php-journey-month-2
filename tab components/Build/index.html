@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Product Catalogue</h1>
+        <input type="text" id="search-input" placeholder="Check what's new!">
+        <div class="filters">
+    <h3>Categories</h3>
+
+    <label>
+        <input type="checkbox" value="Electronics" class="category-filter">
+        Electronics
+    </label>
+
+    <label>
+        <input type="checkbox" value="Clothing" class="category-filter">
+        Clothing
+    </label>
+
+    <label>
+        <input type="checkbox" value="Books" class="category-filter">
+        Books
+    </label>
+
+    <label>
+        <input type="checkbox" value="Accessories" class="category-filter">
+        Accessories
+    </label>
+</div>
+<div class="price-section">
+    <h3>Maximum Price</h3>
+    <input type="range" id="price-filter" min="0" max="5000" value="5000">
+    <p>Maximum: ₹<span id="price-value">5000</span></p>
+</div>
+<div class="sort-section">
+    <label for="sort-select">Sort by:</label>
+
+    <select id="sort-select">
+        <option value="default">Default</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name">Name</option>
+        <option value="rating">Rating</option>
+    </select>
+</div>
+<p id="result-count"></p>
+
+<p id="empty-message" hidden>
+    No products found!
+</p>
+
+<div id="product-grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

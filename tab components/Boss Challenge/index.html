@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Choose Your Plan</h1>
+        <p>Select your billing preference</p>
+
+        <div class="billing-toggle">
+            <span>Monthly</span>
+
+            <label class="switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider"></span>
+            </label>
+
+            <span>Yearly</span>
+        </div>
+
+        
+        <div id="savings-badge" hidden>
+            Save 20%
+        </div>
+
+      
+        <div class="pricing-cards">
+
+          
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <h3 id="basic-price">₹500</h3>
+                <p class="billing-period">/month</p>
+
+                <ul>
+                    <li>Basic features</li>
+                    <li>Email support</li>
+                    <li>Limited access</li>
+                </ul>
+
+                <button type="button">Choose Plan</button>
+            </div>
+
+         
+            <div class="pricing-card">
+                <h2>Pro</h2>
+                <h3 id="pro-price">₹1000</h3>
+                <p class="billing-period">/month</p>
+
+                <ul>
+                    <li>All Basic features</li>
+                    <li>Priority support</li>
+                    <li>Full access</li>
+                </ul>
+
+                <button type="button">Choose Plan</button>
+            </div>
+
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <h3 id="premium-price">₹1500</h3>
+                <p class="billing-period">/month</p>
+
+                <ul>
+                    <li>All Pro features</li>
+                    <li>24/7 support</li>
+                    <li>Unlimited access</li>
+                </ul>
+
+                <button type="button">Choose Plan</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
