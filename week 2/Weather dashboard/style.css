@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #263445;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2563a6;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2563a6;
+}
+
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-bar h1 {
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.search-bar button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #1d4ed8;
+}
+
+
+#current-weather {
+    background: #eaf4ff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#current-weather p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+#forecast {
+    margin-bottom: 25px;
+}
+
+#forecast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.forecast-card {
+    background: #f0f6ff;
+    padding: 18px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#recent-search {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#recent-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recent-item {
+    background: #dbeafe;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+}
+.recent-city {
+    background: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.recent-city:hover {
+    background: #0284c7;
+    color: white;
+    transform: translateY(-2px);
+}
