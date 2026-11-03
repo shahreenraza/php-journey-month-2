@@ -1,0 +1,18 @@
+# Legacy Fix – Solution Report
+
+**Project:** Djehuty
+
+**Problem:** I found that the notification messages are not working properly.
+
+**Cause:** In `edit-session.html`, the error message is added again whenever the user clicks Save without entering a token name.
+ That's why the same message appears multiple times. In `landing_page.js`, the timer directly clears the message,
+ which can remove another notification. Also, the success message is missing its text.
+
+**Solution:** I would use the existing `show_message()` function instead of directly changing the `#message` element. 
+This function clears the previous timer, replaces the old message, applies the correct colour and hides the message automatically
+after 20 seconds. I would also check the timer and add the missing success message in `landing_page.js`.
+
+**Expected Result:** The error message should not repeat, new notifications should replace old ones, the correct colour should appear,
+ and each message should disappear at the correct time.
+
+**Status:** I inspected the code and identified the problem and its solution. I have not changed or tested the code yet.
