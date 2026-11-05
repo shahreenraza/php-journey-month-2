@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: #eaf2ff;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    color: #174ea6;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.testimonial {
+    background-color: #eaf2ff;
+    padding: 40px;
+    margin: 10px 50px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #174ea6;
+    border-radius: 5px;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+footer {
+    margin-top: 50px;
+}
