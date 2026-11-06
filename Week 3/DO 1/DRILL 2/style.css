@@ -1,0 +1,77 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.side-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.side-link:hover {
+    background-color: #495057;
+    color: white;
+}
+
+
+
+
+.main-content {
+    width: 100%;
+    margin-left: 250px;
+}
+
+
+
+.card {
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+.table {
+    background-color: white;
+}
+
+th[data-column] {
+    cursor: pointer;
+}
+
+th[data-column]:hover {
+    background-color: #495057;
+}
+
+
+
+.chart-box {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .main-content {
+        margin-left: 0;
+    }
+
+}

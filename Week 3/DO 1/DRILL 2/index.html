@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="d-flex">
+
+    
+    <div class="sidebar bg-dark text-white p-3 d-none d-lg-block">
+        <h4>My Dashboard</h4>
+
+        <ul class="list-unstyled mt-4">
+            <li><a href="#" class="side-link">Dashboard</a></li>
+            <li><a href="#" class="side-link">Users</a></li>
+            <li><a href="#" class="side-link">Products</a></li>
+            <li><a href="#" class="side-link">Orders</a></li>
+            <li><a href="#" class="side-link">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="offcanvas offcanvas-start bg-dark text-white" id="mobileSidebar">
+        <div class="offcanvas-header">
+            <h5>My Dashboard</h5>
+            <button type="button" class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a href="#" class="side-link">Dashboard</a></li>
+                <li><a href="#" class="side-link">Users</a></li>
+                <li><a href="#" class="side-link">Products</a></li>
+                <li><a href="#" class="side-link">Orders</a></li>
+                <li><a href="#" class="side-link">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content flex-grow-1">
+
+        <nav class="navbar navbar-light bg-light p-3">
+
+            <div class="d-flex align-items-center gap-2">
+
+                <button class="btn btn-dark d-lg-none"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileSidebar">
+                    ☰
+                </button>
+
+                <h4 class="mb-0">Admin Dashboard</h4>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                    User
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="container-fluid p-3">
+
+            <div class="row g-3 mt-2">
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <h5>Total Users</h5>
+                            <h3>1,250</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <h5>Total Products</h5>
+                            <h3>850</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card bg-warning text-dark">
+                        <div class="card-body">
+                            <h5>Total Orders</h5>
+                            <h3 id="totalOrders">10</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="card bg-danger text-white">
+                        <div class="card-body">
+                            <h5>Total Revenue</h5>
+                            <h3>₹45,000</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-4">
+
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <h4>Recent Orders</h4>
+
+                    <button class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#addOrderModal">
+                        + Add New Order
+                    </button>
+                </div>
+
+                <div class="table-responsive mt-3">
+
+                    <table class="table table-striped table-bordered table-hover"
+                           id="ordersTable">
+
+                        <thead class="table-dark">
+                            <tr>
+                                <th data-column="0">Order ID ↕</th>
+                                <th data-column="1">Customer ↕</th>
+                                <th data-column="2">Product ↕</th>
+                                <th data-column="3">Status ↕</th>
+                                <th data-column="4">Amount ↕</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>Rahul</td>
+                                <td>Laptop</td>
+                                <td>Completed</td>
+                                <td>45000</td>
+                            </tr>
+
+                            <tr>
+                                <td>102</td>
+                                <td>Anita</td>
+                                <td>Tab</td>
+                                <td>Pending</td>
+                                <td>50000</td>
+                            </tr>
+
+                            <tr>
+                                <td>103</td>
+                                <td>Shiza</td>
+                                <td>Macbook</td>
+                                <td>Completed</td>
+                                <td>100000</td>
+                            </tr>
+
+                            <tr>
+                                <td>104</td>
+                                <td>Priya</td>
+                                <td>Keyboard</td>
+                                <td>Pending</td>
+                                <td>2500</td>
+                            </tr>
+
+                            <tr>
+                                <td>105</td>
+                                <td>Arjun</td>
+                                <td>Mouse</td>
+                                <td>Completed</td>
+                                <td>1200</td>
+                            </tr>
+
+                            <tr>
+                                <td>106</td>
+                                <td>Sneha</td>
+                                <td>Monitor</td>
+                                <td>Cancelled</td>
+                                <td>15000</td>
+                            </tr>
+
+                            <tr>
+                                <td>107</td>
+                                <td>Rohan</td>
+                                <td>Headphones</td>
+                                <td>Pending</td>
+                                <td>3000</td>
+                            </tr>
+
+                            <tr>
+                                <td>108</td>
+                                <td>Ayesha</td>
+                                <td>Printer</td>
+                                <td>Completed</td>
+                                <td>8500</td>
+                            </tr>
+
+                            <tr>
+                                <td>109</td>
+                                <td>Vikram</td>
+                                <td>Tablet</td>
+                                <td>Cancelled</td>
+                                <td>25000</td>
+                            </tr>
+
+                            <tr>
+                                <td>110</td>
+                                <td>Meera</td>
+                                <td>Smartwatch</td>
+                                <td>Completed</td>
+                                <td>6000</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <nav>
+                    <ul class="pagination justify-content-end" id="pagination">
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <div class="col-12 col-lg-6">
+                    <div class="card p-3">
+                        <h5>Monthly Sales</h5>
+                        <div class="chart-box">
+                            <canvas id="salesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="card p-3">
+                        <h5>Order Status</h5>
+                        <div class="chart-box">
+                            <canvas id="orderChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="addOrderModal" tabindex="-1">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Order</h5>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="orderForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">Order ID</label>
+                        <input type="number" class="form-control"
+                               id="orderId" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Customer Name</label>
+                        <input type="text" class="form-control"
+                               id="customerName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Product</label>
+                        <input type="text" class="form-control"
+                               id="productName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+
+                        <select class="form-select" id="orderStatus" required>
+                            <option value="">Select Status</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Cancelled">Cancelled</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Amount</label>
+                        <input type="number" class="form-control"
+                               id="orderAmount" min="1" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Add Order
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
