@@ -1,0 +1,45 @@
+body {
+  background-color: #fff7ed;
+  color: #431407;
+  font-family: Georgia, serif;
+}
+
+.navbar {
+  background-color: #9a3412 !important;
+}
+
+.hero {
+  background-color: #fff7ed;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  color: #9a3412;
+}
+
+.btn-primary {
+  background-color: #f97316;
+  border-color: #f97316;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #431407;
+  border-radius: 18px;
+}
+
+.card-title {
+  color: #9a3412;
+}
+
+.testimonial {
+  background-color: #ffedd5;
+  border-radius: 18px;
+  color: #431407;
+}
+
+footer {
+  background-color: #9a3412 !important;
+}
+
+/*# sourceMappingURL=theme3.css.map */

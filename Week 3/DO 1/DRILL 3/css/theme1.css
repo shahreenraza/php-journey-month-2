@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background-color: #eaf2ff;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  color: #174ea6;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=theme1.css.map */

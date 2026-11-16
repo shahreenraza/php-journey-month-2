@@ -1,0 +1,19 @@
+$primary-color: #174ea6;
+$background-color: #eaf2ff;
+$border-radius: 10px;
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-color: $background-color;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    color: $primary-color;
+}
+
+.card {
+    border-radius: $border-radius;
+}

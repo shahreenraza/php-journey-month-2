@@ -1,0 +1,44 @@
+$primary-color: #101827;
+$background-color: #1e293b;
+$accent-color: #38bdf8;
+$text-color: #f8fafc;
+$border-radius: 4px;
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: Georgia, serif;
+}
+
+.navbar {
+    background-color: $primary-color !important;
+}
+
+.hero {
+    background-color: $primary-color;
+    padding: 80px 0;
+    color: $text-color;
+}
+
+.hero h1 {
+    color: $accent-color;
+}
+
+.card {
+    background-color: $primary-color;
+    color: $text-color;
+    border-radius: $border-radius;
+}
+
+.card-title {
+    color: $accent-color;
+}
+
+.testimonial {
+    background-color: $primary-color;
+    color: $text-color;
+    border-radius: $border-radius;
+}
+
+footer {
+    background-color: $primary-color !important;
+}

@@ -1,0 +1,41 @@
+body {
+  background-color: #1e293b;
+  color: #f8fafc;
+  font-family: Georgia, serif;
+}
+
+.navbar {
+  background-color: #101827 !important;
+}
+
+.hero {
+  background-color: #101827;
+  padding: 80px 0;
+  color: #f8fafc;
+}
+
+.hero h1 {
+  color: #38bdf8;
+}
+
+.card {
+  background-color: #101827;
+  color: #f8fafc;
+  border-radius: 4px;
+}
+
+.card-title {
+  color: #38bdf8;
+}
+
+.testimonial {
+  background-color: #101827;
+  color: #f8fafc;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #101827 !important;
+}
+
+/*# sourceMappingURL=theme2.css.map */
